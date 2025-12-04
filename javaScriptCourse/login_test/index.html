@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Enter password in the fields, then click "Submit" to check if password is correct:</p>
+
+    username: <input id="usernameInput" type="text" name="username"><br>
+    password: <input id="passwordInput" type="text" name="password"><br><br>
+    
+	<button onclick="compareCredentials()">enter</button>
+	
+	<div id="status" style="color: red;"> </div>
+	<div id="status2" style="color: red;"> </div>
+</body>
+<script>
+
+    function compareCredentials() {
+    	const password = "password";
+    	const username ="user"
+
+    	let passwordInput = document.getElementById("passwordInput").value;
+    	let usernameInput = document.getElementById("usernameInput").value;
+
+    	console.log(passwordInput);
+    	console.log(usernameInput);
+
+    	if(username === usernameInput && password === passwordInput){
+	        console.log("correct credentials");
+			document.getElementById("status").textContent = "correct credentials";
+    		}else{
+			document.getElementById("status").textContent = "error";
+        	console.log("error");
+    		}
+
+    	if(password !== passwordInput){
+			document.getElementById("status2").textContent = "incorrect password";
+        	console.log("incorrect password");
+    	}
+}
+</script>
+</html>

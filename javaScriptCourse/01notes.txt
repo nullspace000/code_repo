@@ -1,0 +1,134 @@
+Java Script Notes
+
+console.log('hello');
+window.alert('thi is an alert');
+
+//variables in js
+let x;
+x = 100;
+console.log(x);
+output --> 100
+
+//inserting variables in output
+let age = 28;
+console.log('your age is ${age} years');
+output --> your age is 28 years
+
+//display variable datatype
+let age = 28;
+console.log(typeof age);
+output --> number
+
+//adding content to elements:
+let isStudent = false;
+document.getElementById('p1').textContent = `Enrolled: ${isStudent}`;
+output --> Enrolled: false
+
+//wierd arithmetic operators
+3 ** 2 = 9 (potencias)
+5 % 2 = 1 (residuo)
+
+let students = 30;
+students *= 2; -->sameAs--> students = students * 2;
+
+//simple user input
+let username = window.prompt("What is you username?");
+
+//user input with ui
+html{
+<label>username</label>
+<input id="myInput">
+<button id="submitButton">submit</button>
+}
+
+javascript{
+let username;
+document.getElementById("submitButton").onclick = function(){
+	username = document.getElementById("myInput").value;
+	document.getElementById("display").textContent = username;
+{
+
+//datatype conversion
+let string1 = 1234;
+string1 = Number(string1);
+console.log(string1, typeof string1);
+output --> 1234 'number'
+
+//check if user input is empty
+let input1 = "Tod";
+let input2 = ""; 
+input1 = Boolean(input1);
+input2 = Boolean(input2);
+console.log(input1); --> true (cast strings to boolean that are not empty will return true)
+console.log(input2); --> false (unasigned variables will also return false)
+
+//const
+const button = document.getElementById("button1");
+button.onclick = function(){
+	console.log('hello");
+}
+
+//Math object 
+Math.PI
+--> 3.1415...
+Math.E
+ --> 2.7132...
+Math.round(2.21)
+--> 2
+Math.floor(3.99)
+--> 3
+ Math.ceil(5.2)
+--> 6
+Math.pow(3,2)
+--> 9
+Math.sqrt(81)
+--> 9
+Math.log(10)
+--> 2.30258...
+Math.sin(45)
+--> 0.8509...
+Math.cos(45)
+--> 0.5253...
+Math.tan(45)
+--> 1.619...
+Math.abs(-3.21)
+--> 3.21
+Math.sign(-3) 
+--> -1 (- = -1 ; + = 1 ; 0 = 0)
+Math.max(3, 2, 1)
+--> 3
+Math.min(3, 2, 1)
+--> 1
+
+Math.random()
+--> 
+
+//if else
+let age = 18;
+if(age == 18){
+	console.log("You should get you licence!");
+}
+else{
+	console.log("fuck off kid");
+} 
+
+//.checked property
+html{
+	<input type="checkbox" id="myCheckBox">
+}
+
+javascript{
+const myCheckBox = document.getElementById("myCheckBox");
+if(myCheckBox.checked){
+	...
+}else{
+	...
+}
+
+//ternary operators (assigns a variable based on a condition;
+let age = 21;
+let message = age >= 18 ? "You're an adult" : "You're a minor";
+console.log(message);
+
+//switch 
+in switch proyect file   
