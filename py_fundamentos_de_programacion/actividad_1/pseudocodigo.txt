@@ -1,0 +1,17 @@
+#instrucciones literales
+solicitar el nombre del usuario
+solicitar el tiempo en horas que dedicas a cinco plataformas digitales
+sumar el tiempo total invertido
+calcular el porcentaje del día que has utilizado en actividades digitales (total / 24*100)
+mostrar los resultados
+
+#pseudocódigo
+Declarar variable para el nombre del usuario
+
+Declarar arreglo para almacemar los valores de cada plataforma digital que decida ingresar el usuario. El arreglo empezara con 5 índices. 
+
+Pedir al usuario ingresar un nombre de plataforma y su valor numérico corespondiente 5 veces.
+
+Una vez que los 5 índices iniciales se hayan asignado, preguntar al usuario si quiere agregar una nueva plataforma.
+
+Si no desea agregar una nueva pataforma, calcular el porsentaje del día que se utilizó en actividades digitales

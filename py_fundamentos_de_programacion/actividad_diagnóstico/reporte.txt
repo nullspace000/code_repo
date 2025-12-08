@@ -1,0 +1,4 @@
+Promedio del grupo: 61.81818181818182
+Calificación más alta: 100
+Número de aprobados: 7
+Número de reprobados: 4

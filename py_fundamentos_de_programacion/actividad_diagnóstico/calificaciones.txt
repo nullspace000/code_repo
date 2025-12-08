@@ -1,0 +1,11 @@
+Ana : 100
+Juan : 80
+Pedro : 60
+María : 75
+Ana : 0
+Juan : 95
+Pedro : 80
+María : 80 
+Juan : 10
+Juan : 10
+María : 90
