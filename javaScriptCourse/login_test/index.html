@@ -14,7 +14,7 @@
 	<button onclick="compareCredentials()">enter</button>
 	
 	<div id="status" style="color: red;"> </div>
-	<div id="status2" style="color: red;"> </div>
+	<div id="status2" style="color: green;"> </div>
 </body>
 <script>
 
@@ -24,13 +24,17 @@
 
     	let passwordInput = document.getElementById("passwordInput").value;
     	let usernameInput = document.getElementById("usernameInput").value;
+	
+	<!-- reset status messages -->
+	    document.getElementById("status2").textContent = "";
+	    document.getElementById("status").textContent = "";
 
     	console.log(passwordInput);
     	console.log(usernameInput);
 
     	if(username === usernameInput && password === passwordInput){
 	        console.log("correct credentials");
-			document.getElementById("status").textContent = "correct credentials";
+			document.getElementById("status2").textContent = "correct credentials";
     		}else{
 			document.getElementById("status").textContent = "error";
         	console.log("error");
