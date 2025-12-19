@@ -10,3 +10,6 @@ Usefull commands:
    - mkdir -p bin
    - javac -d bin $(find src -name "*.java")
  - java -cp bin sistemagestionuniversidad.SistemaGestionUniversidad
+
+ - If i need to recompile:
+   - javac -d bin src/sistemagestionuniversidad/*.java
