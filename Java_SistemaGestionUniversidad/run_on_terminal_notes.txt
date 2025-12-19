@@ -1,0 +1,12 @@
+To have in mind when running this proyect on any random computer
+  1. Already compiled in bin directory.
+  2. Need to have the JRE (java runtime environment) at least
+
+Usefull commands:
+ - java -version
+ - javac -version
+
+ - Compile all Java files and place the .class files into a bin directory:
+   - mkdir -p bin
+   - javac -d bin $(find src -name "*.java")
+ - java -cp bin sistemagestionuniversidad.SistemaGestionUniversidad
