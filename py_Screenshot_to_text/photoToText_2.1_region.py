@@ -1,10 +1,17 @@
+#waits 0.2 secconds for me to switch to the target window
+#takes a screenshot in the defined region
+#saves screenshot to question.png to have a reference to adjust the region
+#prints extracted text from the screenshot
+
+#adjuntar text to .txt file:
+# python photoToText_2.1.py >> output.txt
 from PIL import Image
 import pytesseract
 import time
 import pyscreenshot as ImageGrab
 
-#wait for 1 seconds for me to switch to the target window
-time.sleep(1)
+#wait for 0.2 seconds for me to switch to the target window
+time.sleep(0.2)
 
 # (left, top, width, height)
 x, y, w, h = 0, 0, 1920, 820

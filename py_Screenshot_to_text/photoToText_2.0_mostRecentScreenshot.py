@@ -1,3 +1,6 @@
+#extracts text from most recent screenshot
+#prints extracted text
+
 from PIL import Image
 import pytesseract
 import glob
