@@ -9,6 +9,7 @@ Usefull commands:
  - Compile all Java files and place the .class files into a bin directory:
    - mkdir -p bin
    - javac -d bin $(find src -name "*.java")
+run:
  - java -cp bin sistemagestionuniversidad.SistemaGestionUniversidad
 
  - If i need to recompile:
